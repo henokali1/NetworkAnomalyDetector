@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Notification</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper">
+      <!-- <a href="#!" class="brand-logo">Logo</a> -->
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+     <ul class="right hide-on-med-and-down">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="nwk-scanner.html">Network Scanner</a></li>
+        <li><a href="notification.html">Notifications<span class="new red badge">4</span></a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><a href="statistics.html">Statistics</a></li> 
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="nwk-scanner.html">Network Scanner</a></li>
+        <li><a href="notification.html">Notifications<span class="new red badge">4</span></a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><a href="statistics.html">Statistics</a></li> 
+  </ul>
+
+  <div class="container ">
+      <h1 class="center">Notifications</h1>
+      <table class="striped centered">
+        <thead>
+          <tr>
+              <th>No.</th>
+              <th>Date</th>
+              <th>Message</th>
+              <th>Attack Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td>10</td>
+              <td>22-10-2020</td>
+              <td>A UDP-Flood attack has been detected. An email is send to system admin.</td>
+              <td>Blocked</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>16-09-2020</td>
+              <td>A Smurf  attack has been detected. An email is send to system admin.</td>
+              <td>Blocked</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>11-08-2020</td>
+              <td>A SIDDOS attack has been detected. An email is send to system admin.</td>
+              <td>Blocked</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>29-07-2020</td>
+              <td>An HTTP-FLOOD attack has been detected. An email is send to system admin.</td>
+              <td>Blocked</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>25-07-2020</td>
+              <td>A UDP-Flood attack has been detected. An email is send to system admin.</td>
+              <td>Blocked</td>
+            </tr>
+          <tr>
+            <td>5</td>
+            <td>19-05-2020</td>
+            <td>A Smurf  attack has been detected. An email is send to system admin.</td>
+            <td>Blocked</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>17-05-2020</td>
+            <td>A SIDDOS attack has been detected. An email is send to system admin.</td>
+            <td>Blocked</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>17-05-2020</td>
+            <td>An HTTP-FLOOD attack has been detected. An email is send to system admin.</td>
+            <td>Blocked</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>13-05-2020</td>
+            <td>A Smurf  attack has been detected. An email is send to system admin.</td>
+            <td>Blocked</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>11-05-2020</td>
+            <td>A UDP-Flood attack has been detected. An email is send to system admin.</td>
+            <td>Blocked</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+            
+  </div>
+
+
+
+  <!-- Insert this line above script imports  -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+   
+
+<!-- Insert this line after script imports -->
+<script>if (window.module) module = window.module;</script>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/materialize.min.js"></script>
+  <!-- <script src="assets/js/init.js"></script> -->
+  <script>
+    (function($){
+      $(function(){
+
+        $('.sidenav').sidenav();
+
+      }); // end of document ready
+    })(jQuery); // end of jQuery name space
+  </script>
+
+  </body>
+</html>

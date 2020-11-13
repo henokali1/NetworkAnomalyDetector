@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Report</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper">
+      <!-- <a href="#!" class="brand-logo">Logo</a> -->
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+     <ul class="right hide-on-med-and-down">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="nwk-scanner.html">Network Scanner</a></li>
+        <li><a href="notification.html">Notifications<span class="new red badge">4</span></a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><a href="statistics.html">Statistics</a></li> 
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="nwk-scanner.html">Network Scanner</a></li>
+        <li><a href="notification.html">Notifications<span class="new red badge">4</span></a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><a href="statistics.html">Statistics</a></li> 
+  </ul>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <table class="bordered highlight">
+            <tbody>
+                <tr>
+                    <td id="att_no">Attack No.</td>
+                    <td id="att_no_val">10</td>
+                </tr>
+                <tr>
+                    <td id="type">Type of Attack</td>
+                    <td id="type_val">DDoS</td>
+                </tr>
+                <tr>
+                    <td id="date">Date</td>
+                    <td id="date_val">10-11-2020</td>
+                </tr>
+                <tr>
+                    <td id="time">Time</td>
+                    <td id="time_val">12:06 AM</td>
+                </tr>
+                <tr>
+                    <td id="magnitude">Attack Magnitude</td>
+                    <td id="magnitude_val">Low</td>
+                </tr>
+                <tr>
+                    <td id="ip">Attack Source IP</td>
+                    <td id="ip_val">65.132.94.56</td>
+                </tr>
+                <tr>
+                    <td id="date_blocked">Date Blocked</td>
+                    <td id="date_blocked_val">10-11-2020</td>
+                </tr>
+                <tr>
+                    <td id="block_time">Time Blocked</td>
+                    <td id="block_time_val">12:06 AM</td>
+                </tr>
+                <tr>
+                    <td id="note">System Admin Note</td>
+                    <td id="note_val">Attack was successfully stopped with vey minor damage.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+  <div class="container ">
+      <h1 class="center">Report</h1>
+      <table class="striped centered">
+        <thead>
+          <tr>
+              <th>No.</th>
+              <th>Date</th>
+              <th>Report Title</th>
+              <th class="right">View Full Report</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td>10</td>
+              <td>22-10-2020</td>
+              <td>A UDP-Flood attack</td>
+              <td class="right">
+                  <a onclick="mdl_clicked(10)" class="waves-effect waves-light modal-trigger"><i class="material-icons">assignment</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>16-09-2020</td>
+              <td>A Smurf  attack</td>
+              <td class="right">
+                  <a onclick="mdl_clicked(9)" class="waves-effect waves-light modal-trigger"><i class="material-icons">assignment</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>11-08-2020</td>
+              <td>A SIDDOS attack</td>
+              <td class="right">
+                  <a onclick="mdl_clicked(8)" class="waves-effect waves-light modal-trigger"><i class="material-icons">assignment</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>29-07-2020</td>
+              <td>An HTTP-FLOOD attack</td>
+              <td class="right">
+                  <a onclick="mdl_clicked(7)" class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">assignment</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>25-07-2020</td>
+              <td>A UDP-Flood attack</td>
+              <td class="right">
+                  <a onclick="mdl_clicked(6)" class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">assignment</i></a>
+              </td>
+            </tr>
+          <tr>
+            <td>5</td>
+            <td>19-05-2020</td>
+            <td>A Smurf  attack</td>
+            <td class="right">
+                <a onclick="mdl_clicked(5)" class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">assignment</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>17-05-2020</td>
+            <td>A SIDDOS attack</td>
+            <td class="right">
+                <a onclick="mdl_clicked(4)" class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">assignment</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>17-05-2020</td>
+            <td>An HTTP-FLOOD attack</td>
+            <td class="right">
+                <a onclick="mdl_clicked(3)" class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">assignment</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>13-05-2020</td>
+            <td>A Smurf  attack</td>
+            <td class="right">
+                <a onclick="mdl_clicked(2)" class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">assignment</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>11-05-2020</td>
+            <td>A UDP-Flood attack</td>
+            <td class="right">
+                <a onclick="mdl_clicked(1)" class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">assignment</i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+            
+  </div>
+
+
+
+  <!-- Insert this line above script imports  -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+   
+
+<!-- Insert this line after script imports -->
+<script>if (window.module) module = window.module;</script>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/materialize.min.js"></script>
+  <!-- <script src="assets/js/init.js"></script> -->
+  <script>
+    (function($){
+      $(function(){
+
+        $('.sidenav').sidenav();
+
+      }); // end of document ready
+    })(jQuery); // end of jQuery name space
+  </script>
+  <script>
+      $(document).ready(function(){
+          $('.modal').modal();
+        });
+  </script>
+  <script>
+      function mdl_clicked(val){
+        rep = {
+                10:{
+                    'att_no': 10,
+                    'type': 'UDP-Flood attack',
+                    'date': '22-10-2020',
+                    'time': '07:36',
+                    'magnitude': 'Low',
+                    'ip': '48.211.95.44',
+                    'block_time': '07:37',
+                    'note': 'Attack was successfully stopped with vey minor damage'
+                },
+                9:{
+                    'att_no': 9,
+                    'type': 'Smurf attack',
+                    'date': '16-09-2020',
+                    'time': '14:06',
+                    'magnitude': 'Low',
+                    'ip': '251.61.76.32',
+                    'block_time': '14:07',
+                    'note': 'Attack was successfully stopped with vey minor damage'
+                },
+                8:{
+                    'att_no': 8,
+                    'type': 'SIDDOS attack',
+                    'date': '11-08-2020',
+                    'time': '16:51',
+                    'magnitude': 'Low',
+                    'ip': '213.230.31.40',
+                    'block_time': '16:51',
+                    'note': 'Attack was successfully stopped with vey minor damage'
+                },
+                7:{
+                    'att_no': 7,
+                    'type': 'HTTP-FLOOD',
+                    'date': '29-07-2020',
+                    'time': '02:13',
+                    'magnitude': 'Low',
+                    'ip': '157.31.198.141',
+                    'block_time': '02:13',
+                    'note': 'Attack was successfully stopped with vey minor damage'
+                },
+                6:{
+                    'att_no': 6,
+                    'type': 'UDP-Flood',
+                    'date': '25-07-2020',
+                    'time': '23:11',
+                    'magnitude': 'Low',
+                    'ip': '253.213.164.236',
+                    'block_time': '23:12',
+                    'note': 'Attack was successfully stopped with vey minor damage'
+                },
+                5:{
+                    'att_no': 5,
+                    'type': 'Smurf attack',
+                    'date': '19-05-2020',
+                    'time': '03:47',
+                    'magnitude': 'Low',
+                    'ip': '249.248.112.200',
+                    'block_time': '03:47',
+                    'note': 'Attack was successfully stopped with vey minor damage'
+                },
+                4:{
+                    'att_no': 4,
+                    'type': 'SIDDOS attack',
+                    'date': '17-05-2020',
+                    'time': '22:52',
+                    'magnitude': 'Low',
+                    'ip': '111.218.107.104',
+                    'block_time': '22:52',
+                    'note': 'Attack was successfully stopped with vey minor damage'
+                },
+                3:{
+                    'att_no': 3,
+                    'type': 'HTTP-FLOOD attack',
+                    'date': '17-05-2020',
+                    'time': '06:04',
+                    'magnitude': 'Low',
+                    'ip': '45.142.85.5',
+                    'block_time': '06:05',
+                    'note': 'Attack was successfully stopped with vey minor damage'
+                },
+                2:{
+                    'att_no': 2,
+                    'type': 'Smurf attack',
+                    'date': '13-05-2020',
+                    'time': '20:34',
+                    'magnitude': 'Low',
+                    'ip': '37.35.131.181',
+                    'block_time': '20:35',
+                    'note': 'Attack was successfully stopped with vey minor damage'
+                },
+                1:{
+                    'att_no': 1,
+                    'type': 'UDP-Flood attack',
+                    'date': '11-05-2020',
+                    'time': '01:24',
+                    'magnitude': 'Low',
+                    'ip': '245.162.233.160',
+                    'block_time': '01:25',
+                    'note': 'Attack was successfully stopped with vey minor damage'
+                }
+            }
+        
+          document.getElementById('att_no_val').innerText = val;
+          document.getElementById('type_val').innerText = rep[val].type;
+          document.getElementById('date_val').innerText = rep[val].date;
+          document.getElementById('time_val').innerText = rep[val].time;
+          document.getElementById('magnitude_val').innerText = rep[val].magnitude;
+          document.getElementById('ip_val').innerText = rep[val].ip;
+          document.getElementById('date_blocked_val').innerText = rep[val].date;
+          document.getElementById('block_time_val').innerText = rep[val].block_time;
+          document.getElementById('note_val').innerText = rep[val].note;
+          $('#modal1').modal('open'); 
+        //   alert(val)
+      }
+  </script>
+  </body>
+</html>
